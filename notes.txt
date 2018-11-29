@@ -1,0 +1,76 @@
+Expressions:
+
+<div ng-app ng-init="quqntity=1;">
+
+Quantity <input type=text name=e ng-model="quqntity>
+Price<input type=text name=e ng-model="price">
+{{qunatity * price}}
+
+</div>
+
+<div ng-init=fname='A';lname='B'">
+
+Hello {{fname + " "+lname}}
+
+Expressions can be sting,int ,objects,arrays
+
+
+<div ng-int=" person={fname:'A',lname:'B'}">
+Firstname <input type=text name=fnamr ng-model="person.fname">
+
+
+<div ng-int="numbers[1,2,3,5]">
+
+sum ={{numers{0}+numbers{1}}}
+</div>
+
+<div ng-int=person={fname:'A',lname:'B'},{fname:'A',lname:'B'}">
+
+Hello{{person[o].fname +person[0].lname}}
+Hello{{person[1].fname +person[1].lname}}
+
+expression evaluvation is forgiving to undefined and null
+
+?:
+<div ng-init="n1=100;n2=1200">
+
+Max of {{n1}} and {{n2}} {{n2>n1:n1?n2}
+
+
+
+<div>
+
+Directives: Directives are markers on a DOM element,it tells to attach some specific behaviour to elements(custom directives can also can be there)
+
+ng-app      data-ng-app,data-ng-bind}w3c complaint;ng_bing,ng:bindd
+ng-init
+ng-model
+ng-bind
+ng-bind-template
+ng-show{only style is manipulated}
+ng-hide
+ng-if {element will be removed and cloned element will be added}
+ng-switch
+
+ng-app:defines root element of angular(keep in html tag so that it works all>
+
+<select ng-model="selection">
+<option value="1">One </option>
+</select>
+
+<div ng-switch on="selection">
+<div ng-switch-when="1">One is visible</div>
+<div ng-switch-when="2">One is visible</div>
+<div ng-switch-default="1">One is visible</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
